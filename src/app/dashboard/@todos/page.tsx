@@ -11,7 +11,7 @@ async function getTodos(): Promise<Todo[]> {
     throw new Error('Failed to fetch todos');
   }
   const allTodos = await res.json();
-  return allTodos.slice(0, 10); // Get only first 10 todos
+  return allTodos.slice(0, 10);
 }
 
 export default async function TodosPage() {
